@@ -19,15 +19,15 @@ public class RTurtle : NSObject {
     var score = 0;
     var won = true;
     var maze = [
-/*Start*/[0,0,0,0,0,3,0,0,0,0,0,0,0,0,0],//bottom right
-        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,2,2,0,0,0,0,1,1,1,0,0,0,0,0], // 0 denotes space, 1 denotes wall
-        [0,0,0,2,0,0,1,0,0,0,1,0,0,0,0], // 2 denotes pickup
-        [0,0,0,0,0,1,0,0,0,0,0,1,0,0,0], // 3 denotes goal
-        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,1,0,0,1,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,3],//top right
+/*Start*/[0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],//bottom right
+        [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0], // 0 denotes space, 1 denotes wall
+        [0,1,1,1,1,1,0,0,0,0,0,0,0,0,0], // 2 denotes pickup
+        [0,0,0,0,0,1,0,0,0,0,0,0,0,0,0], // 3 denotes goal
+        [1,1,1,1,0,1,0,0,0,0,0,0,0,0,0],
+        [0,0,0,1,0,1,0,0,0,0,0,0,0,0,0],
+        [0,0,0,1,3,1,0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],//top right
     ]
     
     public func start()->String{
@@ -95,11 +95,11 @@ public class RTurtle : NSObject {
         return "Okay, I'll turn right next."
     }
     public func turnLeft()->String{
-        if(!dead){
+        /*if(!dead){
             rotation=rotation+M_PI_2
             moveSequence.append(SKAction.rotateToAngle(CGFloat(rotation), duration: 0.5))
-        }
-        return "Okay, I'll turn left next."
+        }*/
+        return "Sorry, I can't turn left."
     }
     //    public func moveRight(){
     //        moveSequence.append(SKAction.moveBy(CGVector(dx: squareSize, dy: 0), duration: 0.5))

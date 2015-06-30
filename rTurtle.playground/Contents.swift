@@ -19,6 +19,7 @@ turtle.start()
 This is where you'll type your code. You can use two functions:
 
 `turtle.moveForward()`
+
 `turtle.turnRight()`
 
 Type each instruction on a separate line. Once you're done, the turtle should restart. Your goal is to move the turtle to the yellow brick. (You can't turn left!)
@@ -26,8 +27,6 @@ Type each instruction on a separate line. Once you're done, the turtle should re
 
 turtle.moveForward()
 turtle.turnRight()
-
 //: No need to edit any code after this line. 
 
 turtle.move()
-turtle.getScore()

@@ -1,6 +1,6 @@
 /*:
 # Intro to Programming in Swift Worksheet 1
-Welcome to Swift! In this worksheet, you'll learn about variables & constants, the console, and doing basic math in Swift.
+Welcome to Swift! In this worksheet, you'll learn about using variables and operators to do basic math in Swift.
 */
 
 /*:
@@ -50,11 +50,17 @@ For this exercise:
 4. The **selfIntroduction** variable is a String that comprises of your full name and your age *interpolated* together. (Don't worry if that word doesn't make sense.) Can you change it so that it's a full sentence, e.g. "My name is Yuan Yuchuan, and my age is 45."?
 */
 
+// 1.1
 var firstName = "Yinjie"
 var lastName = "Soon"
-var fullName = firstName + lastName
-var age = 0 // change this!
 
+// 1.2
+var fullName = firstName + lastName
+
+// 1.3
+
+// 1.4
+var age = 0 // change this!
 var selfIntroduction = "\(fullName) \(age)"
 
 /*:
@@ -84,6 +90,9 @@ var secondOperation = firstOperation / 10
 var thirdOperation = 5 + secondOperation
 var fourhOperation = thirdOperation - 1
 
+// You can add brackets to adjust the order of operations, just like in math
+var operationOrder2 : Double = (5 + 10) * 2.5 / 10 - 1
+
 // TODO: Figure out what this % means!
 var modExample1 = 10 % 5
 var modExample2 = 10 % 2
@@ -92,12 +101,32 @@ var modExample4 = 10 % 4
 var modExample5 = 5 % 2
 
 /*:
-### Execise 2: Some math
+### Execise 2
+For this exercise: 
+1. For the **operations** variable, add two sets of brackets, *without changing any numbers*, to make it evaluate to 300.5.
+2. Given a temperature in degrees Fahrenheit, convert it to degrees Celsius.
+3. Given two variables, weight (in kg), and height (in metres), calculate the BMI of a person.
+4. In an imaginary country, there are $7 notes. (Don't ask us why.) How many $7 notes can you get out of $4926? How much is left over?
 */
 
 
+// 2.1
+var operations : Double = 50 + 2 * 25 / 6 - 1 + 8 * 5 + 1.0 / 2
 
+// 2.2
+var degreesF : Double = 99.5 // for 99.5, answer should be 37.5
+var degreesC : Double = 0 // TODO
 
+// 2.3
+var weight : Double = 61.0
+var height: Double = 1.65 // for this weight & height, BMI is 22.4
+var bmi : Double = 0 // TODO
+
+// 2.4
+var amount : Int = 4926
+var noteSize : Int = 7
+var howManyNotes: Int = 0  // TODO
+var howMuchRemainder : Int = 0  // TODO
 
 
 

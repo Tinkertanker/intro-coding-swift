@@ -22,8 +22,16 @@ This is where you'll type your code. You can use two functions:
 
 `turtle.turnRight()`
 
-Type each instruction on a separate line. Once you're done, the turtle should restart. Your goal is to move the turtle to the yellow brick. (You can't turn left!)
+Type each instruction on a separate line. Once you're done, the turtle should restart. Your goal is to move the turtle to the yellow brick. 
+
+You can't turn left, but you can make use of the *function* that we've written for you. To use it, call `turnLeft()` (no need for **turtle.** in front!).
 */
+
+func turnLeft() {
+    turtle.turnRight()
+    turtle.turnRight()
+    turtle.turnRight()
+}
 
 turtle.moveForward()
 turtle.turnRight()

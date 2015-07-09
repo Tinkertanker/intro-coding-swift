@@ -1,6 +1,6 @@
 /*:
 # Intro to Programming in Swift 
-## Worksheet 0
+## Worksheet 1
 
 Before you start, bring up the *Assistant Editor* in Xcode. To do this, click on the *View* menu, then *Assistant Editor*, then *Show Assistant Editor*. This will bring up a panel on the right.
 
@@ -37,6 +37,7 @@ func moveForwardByFour() {
 func turnLeft() {
     turtle.turnRight()
     turtle.turnRight()
+    
 }
 
 

@@ -9,8 +9,11 @@ This function counts from 1 to the number you specify.
 */
 
 func countTo(number : Int) {
+    var multiplier = 4
     for i in 1...number {
         println("Your current number is \(i)")
+        var result = multiplier * i
+        println("This multiplied by \(multiplier) gives you \(result)!")
     }
 }
 
@@ -56,8 +59,8 @@ timesTableTo(10, 13)
 
 
 /*:
-## Exercise 2A: 99 bottles of beer
-Write a function that, based on your input, sings the song "N bottles of beer on the wall". Currently, all it does is sing the same line 5 times!
+## Exercise 2C: 99 bottles of beer
+Write a function that, based on your input, sings the song "N bottles of beer on the wall". Currently, all it does is sing the same line 5 times...
 */
 
 println("")

@@ -1,132 +1,67 @@
 /*:
-# Intro to Programming in Swift Worksheet 1
-Welcome to Swift! In this worksheet, you'll learn about using variables and operators to do basic math in Swift.
+# Intro to Programming in Swift Worksheet 2
+In this set of exercises, you'll use Swift to make functions that do basic math operations. Remember to turn on the *Assistant Editor* before you start.
 */
 
 /*:
-## Part 1: Variables
-Variables are containers that store information. We can store a few *types* of information:
-* Strings: Like **welcome**, these store pieces of text.
-* Integer numbers: Whole numbers, like **numberOfStudents**
-* Numbers with decimals: Called *Float* or *Double*, these are numbers with decimal points, such as **temperatureToday**.
-
-Some things to note:
-* When you *first* create a variable, you have to put the word `var` in front of it. This is called *declaring* the variable. When you next use it, you don't have to say `var` any more, just use the variable name.
-* Variable names must start with letters, and cannot include spaces. For multiple words, we use camelCase, which means capitalisingTheFirstLetterOfEachWord.
-* You can use add variables together! Try adding numberOfStudents and absentStudents.
-* You can join strings together too! See the **helloWorld** variable, and edit that so that it's correct.
-
-There are some things in the examples below you need to change. Look for the word `TODO`.
+## Demo 1: Adder
+This function adds 5 to any parameter you pass in, and prints it out.
 */
 
-var welcome = "Hello world!"
-var numberOfStudents = 15
-var absentStudents = 5
-var temperatureToday = 30.5
+func addFive(number : Double) {
+    var newNumber = number + 5
+    println("Your new number is \(newNumber)!!!")
+}
 
-// Now we specify the types. This is optional, but sometimes useful!
-var potato : String = "Potato!"
-var numberOfPotatoes : Int = 20
-var temperatureTomorrow : Double = 30.8
-
-// We can change the temperature...
-temperatureToday = 34.5 // so hot!
-// Or the number of students.
-numberOfStudents = 12 // 3 more have called in sick
-absentStudents = 8 
-
-var totalStudents = numberOfStudents + 1 // TODO: Wait, this is wrong. Change this to reflect the actual total
-
-var hello = "Hello "
-var world = "world!"
-var helloWorld = hello + "potato" // TODO: That's not what we want to say! Change this to Hello world, using the 'world' variable
+// Change the parameter below, and see what happens in the console output.
+addFive(10)
 
 /*:
-### Exercise 1
-For this exercise: 
-1. Change the value of **firstName** to your given name (e.g. "Steven", "Hongyi", "Akmal"), and the value of **lastName** to your surname or family name (e.g. "Chan", "bin Abdul Rahman").
-2. Add a space between your first name and last name.
-3. Create a new variable called **salutation**, and give it the value for yourself (e.g. "Miss", "Mister"). Include it in **fullName**.
-4. The **selfIntroduction** variable is a String that comprises of your full name and your age *interpolated* together. (Don't worry if that word doesn't make sense.) Can you change it so that it's a full sentence, e.g. "My name is Yuan Yuchuan, and my age is 45."?
+## Exercise 1A: lb to kg
+Make a function that changes pounds (lbs) to kilograms (kg) and prints it out.
 */
 
-// 1.1
-var firstName = "Yinjie"
-var lastName = "Soon"
+func poundToKg(pounds : Double) {
+    var kg = pounds // TODO: this is wrong! You need to multiply by something.
+    println("In kg, \(pounds) pounds is \(kg) kg.")
+}
 
-// 1.2
-var fullName = firstName + lastName
-
-// 1.3
-
-// 1.4
-var age = 0 // change this!
-var selfIntroduction = "\(fullName) \(age)"
+poundToKg(100.5)
 
 /*:
-## Part 2: Math & Operators
-Now that you've made some variables, you can use Xcode as a calculator! Some notes:
-* These are the *operators* you can use on each number: \+ is plus, \- is minus, \* is multiply, and \/ (watch out for the direction of the slash) is divide.
-* There's one more, \%, called "mod". Can you figure out what it means? [Google](https://www.google.com.sg/search?q=mod+operator) is usually helpful.
-* When working with integers, any output you get will be an integer too! That's why the **dividing** example gives 0. To get the expected output, you have to change the type of each to Double, by writing Double(num1) and Double(num2). See the **dividingAgain** example.
-* As you know from math class, there's an order to the operations. Can you figure out what comes first in the **operationOrder** example
-
+## Exercise 1B: F to C
+Make a function that changes Fahrenheit to Celsius and prints it out.
 */
 
-var num1 = 5
-var num2 = 10
-var adding = num1 + num2
-var subtracting = num1 - num2
-var multiplying = num1 * num2
-var dividing = num1 / num2 // wait... 0?!
-var dividingAgain = Double(num1) / Double(num2) // this works!
+func fahrenheitToCelsius(tempInFahrenheit : Double) {
+    // TODO: What goes in here? Refer to poundToKg to figure it out.
+    // You also need to find out how to change F to C. Look it up online.
+}
 
-// Can you figure out what comes first?
-var operationOrder : Double = 5 + 10 * 2.5 / 10 - 1
-
-// This is how it breaks down:
-var firstOperation = 10 * 2.5
-var secondOperation = firstOperation / 10
-var thirdOperation = 5 + secondOperation
-var fourhOperation = thirdOperation - 1
-
-// You can add brackets to adjust the order of operations, just like in math
-var operationOrder2 : Double = (5 + 10) * 2.5 / 10 - 1
-
-// TODO: Figure out what this % means!
-var modExample1 = 10 % 5
-var modExample2 = 10 % 2
-var modExample3 = 10 % 9
-var modExample4 = 10 % 4
-var modExample5 = 5 % 2
+fahrenheitToCelsius(98.7)
 
 /*:
-### Execise 2
-For this exercise: 
-1. For the **operations** variable, add two sets of brackets, *without changing any numbers*, to make it evaluate to 300.5.
-2. Given a temperature in degrees Fahrenheit, convert it to degrees Celsius.
-3. Given two variables, weight (in kg), and height (in metres), calculate the BMI of a person.
-4. In an imaginary country, there are $7 notes. (Don't ask us why.) How many $7 notes can you get out of $4926? How much is left over?
+## Demo 2: Multiplier
+This function multiples two numbers together.
 */
 
+func multiplyNumbers(num1 : Double, num2 : Double) {
+    var result : Double = num1 * num2
+    println("Multiplying \(num1) by \(num2) gives you \(result)")
+}
 
-// 2.1
-var operations : Double = 50 + 2 * 25 / 6 - 1 + 8 * 5 + 1.0 / 2
+multiplyNumbers(50, 2.5)
 
-// 2.2
-var degreesF : Double = 99.5 // for 99.5, answer should be 37.5
-var degreesC : Double = 0 // TODO
+/*: 
+## Exercise 1C: BMI calculator
+Make a function that takes in weight and height, and prints out your BMI.
+*/
 
-// 2.3
-var weight : Double = 61.0
-var height: Double = 1.65 // for this weight & height, BMI is 22.4
-var bmi : Double = 0 // TODO
+func calculateBMI(weight : Double, height : Double) {
+    var bmi = weight // TODO: this is wrong! 
+    println("Your BMI is \(bmi)")
+}
 
-// 2.4
-var amount : Int = 4926
-var noteSize : Int = 7
-var howManyNotes: Int = 0  // TODO
-var howMuchRemainder : Int = 0  // TODO
-
+calculateBMI(55, 1.65)
 
 

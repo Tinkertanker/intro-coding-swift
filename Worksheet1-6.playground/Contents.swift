@@ -24,7 +24,6 @@ Now we have two more functions:
 
 */
 // This is a function that groups the three turtle.turnRight() calls together! You can use it with turnLeft().
-
 func turnLeft() {
     turtle.turnRight()
     turtle.turnRight()
@@ -35,14 +34,18 @@ while(!turtle.isFrontBlocked()){
     turtle.moveForward()
     turtle.pickUp()
 }
+
 turtle.turnRight()
+
 while(!turtle.isFrontBlocked()){
     turtle.moveForward()
     turtle.pickUp()
 }
+
 turtle.turnRight();
 turtle.moveForward()
 // Bonus: Can you make your turtle move to the goal with just one function call? In other words, instead of turtle.moveForward(), then turtle.moveForward(), etc., just have a function like moveToGoal().
+//Bonus bonus: Can you make it solve the maze for any given maze?
 
 //: No need to edit any code after this line. 
 

@@ -1,6 +1,16 @@
 /*:
 # Intro to Programming in Swift Worksheet 2
 In this set of exercises, you'll use Swift to make functions that do basic math operations. Remember to turn on the *Assistant Editor* before you start.
+
+You'll notice that there is some code commented out like so:
+
+`//poundToKg(100.5)`
+
+Code comments allow you to disable certain portions of code, or to add human-readable text that explains what's going on. To disable them, just remove the // in front like so:
+
+`poundToKg(100.5)`
+
+This is very important when working in groups on a project, since the code might seem obvious to one person but completely unreadable to another person.
 */
 
 /*:
@@ -14,6 +24,7 @@ func addFive(number : Double) {
 }
 
 // Change the parameter below, and see what happens in the console output.
+
 addFive(10)
 
 /*:
@@ -26,7 +37,7 @@ func poundToKg(pounds : Double) {
     println("In kg, \(pounds) pounds is \(kg) kg.")
 }
 
-poundToKg(100.5)
+//poundToKg(100.5)
 
 /*:
 ## Exercise 1B: F to C
@@ -38,7 +49,7 @@ func fahrenheitToCelsius(tempInFahrenheit : Double) {
     // You also need to find out how to change F to C. Look it up online.
 }
 
-fahrenheitToCelsius(98.7)
+//fahrenheitToCelsius(98.7)
 
 /*:
 ## Demo 2: Multiplier
@@ -50,7 +61,7 @@ func multiplyNumbers(num1 : Double, num2 : Double) {
     println("Multiplying \(num1) by \(num2) gives you \(result)")
 }
 
-multiplyNumbers(50, 2.5)
+//multiplyNumbers(50, 2.5)
 
 /*: 
 ## Exercise 1C: BMI calculator
@@ -62,6 +73,4 @@ func calculateBMI(weight : Double, height : Double) {
     println("Your BMI is \(bmi)")
 }
 
-calculateBMI(55, 1.65)
-
-
+//calculateBMI(55, 1.65)

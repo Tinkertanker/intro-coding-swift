@@ -8,6 +8,11 @@ In this set of exercises, you'll use Swift to make functions that do basic opera
 This function counts from 1 to the number you specify.
 */
 
+println("")
+println("Demo 1")
+println("------------")
+println("")
+
 func countTo(number : Int) {
     var multiplier = 4
     for i in 1...number {

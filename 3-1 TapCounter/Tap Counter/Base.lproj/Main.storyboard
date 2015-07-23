@@ -38,6 +38,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe0-mb-zPe">
+                                <rect key="frame" x="67" y="421" width="178" height="61"/>
+                                <color key="backgroundColor" red="0.16253876862765404" green="1" blue="0.086590740374444031" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="TRY AGAIN">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g5E-ZX-zn9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -45,6 +56,7 @@
                         <outlet property="clickButton" destination="2oh-qO-SGe" id="dIZ-m1-sRi"/>
                         <outlet property="congratsLabel" destination="tgc-F0-q88" id="XiL-na-AvI"/>
                         <outlet property="counterLabel" destination="A6Q-Pv-ZZX" id="7lu-BE-9Ne"/>
+                        <outlet property="resetButton" destination="Qe0-mb-zPe" id="gyb-An-eI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

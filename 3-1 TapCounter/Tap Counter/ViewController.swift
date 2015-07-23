@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var congratsLabel: UILabel!
     @IBOutlet weak var clickButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     
     var counter = 0
     var timer : NSTimer?
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         congratsLabel.hidden = true
+        resetButton.hidden = true
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target:self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
     }
     
@@ -46,10 +48,20 @@ class ViewController: UIViewController {
             clickButton.enabled = false
             clickButton.setTitle("Finished", forState:UIControlState.Normal)
             congratsLabel.text = "You took \(timeElapsed) seconds!"
+            resetButton.hidden = false
         }
         
         
     }
 
+    @IBAction func reset(sender: AnyObject) {
+        timeElapsed = 0;
+        resetButton.hidden = true
+        counter = 0;
+        counterLabel.text = "0"
+        clickButton.enabled = true
+        clickButton.setTitle("CLICK ME!!!!",forState:UIControlState.Normal)
+        congratsLabel.hidden = true
+    }
 }
 

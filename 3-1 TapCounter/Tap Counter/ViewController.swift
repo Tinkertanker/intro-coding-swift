@@ -15,11 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var clickButton: UIButton!
     
     var counter = 0
+    var timer : NSTimer?
+    var timeElapsed : Double = 0.0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         congratsLabel.hidden = true
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target:self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
+    }
+    
+    func updateCounter() {
+        timeElapsed = timeElapsed + 0.1
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +45,7 @@ class ViewController: UIViewController {
         if (counter > 10) {
             clickButton.enabled = false
             clickButton.setTitle("Finished", forState:UIControlState.Normal)
-            congratsLabel.text = "You're done!!"
+            congratsLabel.text = "You took \(timeElapsed) seconds!"
         }
         
         

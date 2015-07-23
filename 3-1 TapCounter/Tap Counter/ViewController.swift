@@ -38,10 +38,7 @@ class ViewController: UIViewController {
         
         if (counter > 10) {
             clickButton.enabled = false
-            
             clickButton.setTitle("Finished", forState:UIControlState.Normal)
-            
-            
             congratsLabel.text = "You're done!!"
         }
         

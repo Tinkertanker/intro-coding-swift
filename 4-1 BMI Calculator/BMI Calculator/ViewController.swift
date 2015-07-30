@@ -25,6 +25,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculate(sender: AnyObject) {
+        var weight = (weightField.text as NSString).floatValue
+        var height = (heightField.text as NSString).floatValue
+        
+        var bmi = weight / (height * height);
+        
+        println("")
+        println("The weight entered is \(weight)")
+        println("The height entered is \(height)")
+        println("The BMI calculated is \(bmi)")
+        println("")
+        
     }
 
 }

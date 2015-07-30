@@ -36,6 +36,11 @@ class ViewController: UIViewController {
         println("The BMI calculated is \(bmi)")
         println("")
         
+        resultsField.text = "Your BMI is \(bmi)"
+        resultsField.hidden = false
+        
+        view.endEditing(true)
+        
     }
 
 }

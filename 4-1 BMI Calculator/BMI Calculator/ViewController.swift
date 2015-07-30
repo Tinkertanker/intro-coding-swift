@@ -36,7 +36,12 @@ class ViewController: UIViewController {
         println("The BMI calculated is \(bmi)")
         println("")
         
-        resultsField.text = "Your BMI is \(bmi)"
+        if (height <= 0 || weight <= 0) {
+            resultsField.text = "Input error! Please try again."
+        } else {
+            resultsField.text = "Your BMI is \(bmi)"
+        }
+        
         resultsField.hidden = false
         
         view.endEditing(true)

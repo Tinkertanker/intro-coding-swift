@@ -59,11 +59,21 @@ class ViewController: UIViewController {
         var popupAction = "Click"
         
         if (bmi < 18.5) {
-            // underweight! change the text to tell the user.
+            // underweight
+            popupTitle = "Underweight!"
+            popupMessage = "Your BMI is \(bmi), which means you're underweight"
+            popupAction = "Oh, OK"
         } else if (bmi < 25) {
-            // normal weight
+            // acceptable
+            popupTitle = "OK weight!"
+            popupMessage = "Your BMI is \(bmi), which is in the acceptable range. Way to go!"
+            popupAction = "I know right"
         } else {
             // overweight.
+            popupTitle = "Overweight!"
+            popupMessage = "Your BMI is \(bmi), which is over the recommended limit."
+            popupAction = "Aw, OK"
+
         }
 
         var alert = UIAlertController(title: popupTitle, message: popupMessage, preferredStyle: UIAlertControllerStyle.Alert)

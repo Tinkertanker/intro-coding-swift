@@ -48,5 +48,31 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func popup(sender: AnyObject) {
+        
+        var weight = (weightField.text as NSString).floatValue
+        var height = (heightField.text as NSString).floatValue
+        var bmi = weight / (height * height);
+        
+        var popupTitle = "Alert"
+        var popupMessage = "Message"
+        var popupAction = "Click"
+        
+        if (bmi < 18.5) {
+            // underweight! change the text to tell the user.
+        } else if (bmi < 25) {
+            // normal weight
+        } else {
+            // overweight.
+        }
+
+        var alert = UIAlertController(title: popupTitle, message: popupMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: popupAction, style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+
+    }
+    
+    
+
 }
 

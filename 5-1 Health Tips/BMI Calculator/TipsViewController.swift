@@ -16,8 +16,10 @@ class TipsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        titleLabel.text = "Drink coffee to have a better nap"
+        contentLabel.text = "Why does this work? A 20-minute nap ends just as the caffeine kicks in and clears the brain of a molecule called adenosine, maximizing alertness."
+        imageView.image = UIImage(named:"coffee.jpg")
+        
     }
 
     override func didReceiveMemoryWarning() {

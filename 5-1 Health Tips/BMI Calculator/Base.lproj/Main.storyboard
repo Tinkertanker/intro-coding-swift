@@ -128,11 +128,19 @@
                                 <state key="normal" title="Next Tip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextTip:" destination="DnC-Qq-kG3" eventType="touchUpInside" id="C3x-1U-top"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.787919174" green="0.58761834719999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Health Tips" image="tips.png" id="LR7-GI-sOc"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="chW-cg-8t7" id="YJk-4N-mUi"/>
+                        <outlet property="imageView" destination="Srj-UL-oYA" id="fiq-Ok-fCc"/>
+                        <outlet property="titleLabel" destination="7vh-Ix-qU8" id="EZR-nv-q3A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzM-I4-uOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

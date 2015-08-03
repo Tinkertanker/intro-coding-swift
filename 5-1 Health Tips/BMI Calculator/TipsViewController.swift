@@ -10,6 +10,10 @@ import UIKit
 
 class TipsViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +35,11 @@ class TipsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    @IBAction func nextTip(sender: AnyObject) {
+        
+        
+    }
+
 
 }

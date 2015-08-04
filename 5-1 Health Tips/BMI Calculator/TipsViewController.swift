@@ -39,9 +39,36 @@ class TipsViewController: UIViewController {
     */
 
     @IBAction func nextTip(sender: AnyObject) {
+        hideTip()
+    }
+    
+    // This function hides everything using an animation, with a delay of 0.5 seconds.
+    // When the hiding is completed, it runs self.showTip(), which is the next function
+    func hideTip() {
+        UIView.animateWithDuration(0.5,
+            animations: {
+                self.titleLabel.alpha = 0
+                self.contentLabel.alpha = 0
+                self.imageView.alpha = 0
+            },
+            completion: { finished in
+                self.showTip()
+            }
+        )
+    }
+    
+    // This function runs after the animation in hideTip() is done. 
+    // We'll first set the label and images, then re-animate them back to be visible.
+    func showTip() {
         titleLabel.text = "For healthy teeth, don't brush after eating"
         contentLabel.text = "Don't brush your teeth immediately after meals and drinks, especially if they were acidic. Wait 30 to 60 minutes before brushing."
-        imageView.image = UIImage(named:"teeth.jpg")        
+        imageView.image = UIImage(named:"teeth.jpg")
+        UIView.animateWithDuration(0.5,
+            animations: {
+                self.titleLabel.alpha = 1
+                self.contentLabel.alpha = 1
+                self.imageView.alpha = 1
+        })
     }
 
 

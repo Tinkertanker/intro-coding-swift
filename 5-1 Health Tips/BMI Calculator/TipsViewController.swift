@@ -39,8 +39,9 @@ class TipsViewController: UIViewController {
     */
 
     @IBAction func nextTip(sender: AnyObject) {
-        
-        
+        titleLabel.text = "For healthy teeth, don't brush after eating"
+        contentLabel.text = "Don't brush your teeth immediately after meals and drinks, especially if they were acidic. Wait 30 to 60 minutes before brushing."
+        imageView.image = UIImage(named:"teeth.jpg")        
     }
 
 

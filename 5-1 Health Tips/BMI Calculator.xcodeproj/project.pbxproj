@@ -14,6 +14,7 @@
 		AF6AE8B91B69313200329A20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6AE8B71B69313200329A20 /* LaunchScreen.xib */; };
 		AF6AE8C51B69313300329A20 /* BMI_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AE8C41B69313300329A20 /* BMI_CalculatorTests.swift */; };
 		AF7DE7FC1B6F37BD008FB548 /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF7DE7FB1B6F37BD008FB548 /* coffee.jpg */; };
+		AF7DE7FE1B706491008FB548 /* teeth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF7DE7FD1B706491008FB548 /* teeth.jpg */; };
 		AF9B1C261B6E802800C9E991 /* weight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9B1C251B6E802800C9E991 /* weight@2x.png */; };
 		AF9B1C2C1B6E887800C9E991 /* tips@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9B1C2B1B6E887800C9E991 /* tips@2x.png */; };
 		AF9B1C301B6E8B2500C9E991 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */; };
@@ -41,6 +42,7 @@
 		AF6AE8C31B69313300329A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6AE8C41B69313300329A20 /* BMI_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_CalculatorTests.swift; sourceTree = "<group>"; };
 		AF7DE7FB1B6F37BD008FB548 /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
+		AF7DE7FD1B706491008FB548 /* teeth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teeth.jpg; sourceTree = "<group>"; };
 		AF9B1C251B6E802800C9E991 /* weight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weight@2x.png"; sourceTree = "<group>"; };
 		AF9B1C2B1B6E887800C9E991 /* tips@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips@2x.png"; sourceTree = "<group>"; };
 		AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				AF9B1C251B6E802800C9E991 /* weight@2x.png */,
 				AF9B1C2B1B6E887800C9E991 /* tips@2x.png */,
 				AF6AE8B21B69313200329A20 /* Main.storyboard */,
+				AF7DE7FD1B706491008FB548 /* teeth.jpg */,
 				AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */,
 				AF6AE8B51B69313200329A20 /* Images.xcassets */,
 				AF6AE8B71B69313200329A20 /* LaunchScreen.xib */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF6AE8B41B69313200329A20 /* Main.storyboard in Resources */,
+				AF7DE7FE1B706491008FB548 /* teeth.jpg in Resources */,
 				AF6AE8B91B69313200329A20 /* LaunchScreen.xib in Resources */,
 				AF9B1C261B6E802800C9E991 /* weight@2x.png in Resources */,
 				AF7DE7FC1B6F37BD008FB548 /* coffee.jpg in Resources */,

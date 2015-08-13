@@ -14,6 +14,8 @@ class TipsViewController: UIViewController {
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    var currentTip = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = "Drink coffee to have a better nap"
@@ -39,6 +41,7 @@ class TipsViewController: UIViewController {
     */
 
     @IBAction func nextTip(sender: AnyObject) {
+        currentTip++
         hideTip()
     }
     
@@ -59,10 +62,17 @@ class TipsViewController: UIViewController {
     
     // This function runs after the animation in hideTip() is done. 
     // We'll first set the label and images, then re-animate them back to be visible.
+    
     func showTip() {
-        titleLabel.text = "For healthy teeth, don't brush after eating"
-        contentLabel.text = "Don't brush your teeth immediately after meals and drinks, especially if they were acidic. Wait 30 to 60 minutes before brushing."
-        imageView.image = UIImage(named:"teeth.jpg")
+        
+        if (currentTip == 1) {
+            titleLabel.text = "For healthy teeth, don't brush after eating"
+            contentLabel.text = "Don't brush your teeth immediately after meals and drinks, especially if they were acidic. Wait 30 to 60 minutes before brushing."
+            imageView.image = UIImage(named:"teeth.jpg")
+        } else if (currentTip == 2) {
+            
+        }
+        
         UIView.animateWithDuration(0.5,
             animations: {
                 self.titleLabel.alpha = 1

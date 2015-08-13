@@ -70,7 +70,9 @@ class TipsViewController: UIViewController {
             contentLabel.text = "Don't brush your teeth immediately after meals and drinks, especially if they were acidic. Wait 30 to 60 minutes before brushing."
             imageView.image = UIImage(named:"teeth.jpg")
         } else if (currentTip == 2) {
-            
+            titleLabel.text = "To wear a smaller size, gain weight"
+            contentLabel.text = "Although a pound of fat weighs the same as a pound of muscle, muscle takes up less space, says Mark Nutting, fitness director of SACO Sport & Fitness in Saco, Maine."
+            imageView.image = UIImage(named:"liftweights.jpg")
         }
         
         UIView.animateWithDuration(0.5,

@@ -139,6 +139,7 @@
                     <connections>
                         <outlet property="contentLabel" destination="chW-cg-8t7" id="YJk-4N-mUi"/>
                         <outlet property="imageView" destination="Srj-UL-oYA" id="fiq-Ok-fCc"/>
+                        <outlet property="nextTipButton" destination="nZd-rt-RmA" id="UjD-FH-UTw"/>
                         <outlet property="titleLabel" destination="7vh-Ix-qU8" id="EZR-nv-q3A"/>
                     </connections>
                 </viewController>

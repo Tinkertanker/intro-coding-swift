@@ -14,6 +14,8 @@ class TipsViewController: UIViewController {
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var nextTipButton: UIButton!
+    
     var currentTip = 0
     
     override func viewDidLoad() {
@@ -42,7 +44,15 @@ class TipsViewController: UIViewController {
 
     @IBAction func nextTip(sender: AnyObject) {
         currentTip++
-        hideTip()
+        
+        if (currentTip < 3) {
+            hideTip()
+        }
+        
+        if (currentTip == 2) {
+            nextTipButton.enabled = false
+        }
+        
     }
     
     // This function hides everything using an animation, with a delay of 0.5 seconds.

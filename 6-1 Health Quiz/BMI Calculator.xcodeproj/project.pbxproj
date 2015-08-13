@@ -19,6 +19,8 @@
 		AF9B1C2C1B6E887800C9E991 /* tips@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9B1C2B1B6E887800C9E991 /* tips@2x.png */; };
 		AF9B1C301B6E8B2500C9E991 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */; };
 		AFCAE6A41B7C49D300C780FA /* liftweights.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFCAE6A31B7C49D300C780FA /* liftweights.jpg */; };
+		AFCAE6A61B7C55E800C780FA /* question@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFCAE6A51B7C55E800C780FA /* question@2x.png */; };
+		AFCAE6A81B7C567E00C780FA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCAE6A71B7C567E00C780FA /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		AF9B1C2B1B6E887800C9E991 /* tips@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips@2x.png"; sourceTree = "<group>"; };
 		AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		AFCAE6A31B7C49D300C780FA /* liftweights.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = liftweights.jpg; sourceTree = "<group>"; };
+		AFCAE6A51B7C55E800C780FA /* question@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question@2x.png"; sourceTree = "<group>"; };
+		AFCAE6A71B7C567E00C780FA /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,11 @@
 				AF9B1C251B6E802800C9E991 /* weight@2x.png */,
 				AF9B1C2B1B6E887800C9E991 /* tips@2x.png */,
 				AF6AE8B21B69313200329A20 /* Main.storyboard */,
+				AFCAE6A51B7C55E800C780FA /* question@2x.png */,
 				AF7DE7FD1B706491008FB548 /* teeth.jpg */,
 				AFCAE6A31B7C49D300C780FA /* liftweights.jpg */,
 				AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */,
+				AFCAE6A71B7C567E00C780FA /* QuizViewController.swift */,
 				AF6AE8B51B69313200329A20 /* Images.xcassets */,
 				AF6AE8B71B69313200329A20 /* LaunchScreen.xib */,
 				AF7DE7FB1B6F37BD008FB548 /* coffee.jpg */,
@@ -213,6 +219,7 @@
 				AF6AE8B41B69313200329A20 /* Main.storyboard in Resources */,
 				AF7DE7FE1B706491008FB548 /* teeth.jpg in Resources */,
 				AF6AE8B91B69313200329A20 /* LaunchScreen.xib in Resources */,
+				AFCAE6A61B7C55E800C780FA /* question@2x.png in Resources */,
 				AF9B1C261B6E802800C9E991 /* weight@2x.png in Resources */,
 				AFCAE6A41B7C49D300C780FA /* liftweights.jpg in Resources */,
 				AF7DE7FC1B6F37BD008FB548 /* coffee.jpg in Resources */,
@@ -238,6 +245,7 @@
 				AF6AE8B11B69313200329A20 /* ViewController.swift in Sources */,
 				AF6AE8AF1B69313200329A20 /* AppDelegate.swift in Sources */,
 				AF9B1C301B6E8B2500C9E991 /* TipsViewController.swift in Sources */,
+				AFCAE6A81B7C567E00C780FA /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

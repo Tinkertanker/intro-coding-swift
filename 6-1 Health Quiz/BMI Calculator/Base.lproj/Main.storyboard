@@ -145,7 +145,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzM-I4-uOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="525" y="1094"/>
+            <point key="canvasLocation" x="250" y="1167"/>
+        </scene>
+        <!--Quiz-->
+        <scene sceneID="dXW-Aa-oVb">
+            <objects>
+                <viewController id="Qhy-HE-ef2" customClass="QuizViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W8v-0V-ZfO"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Sf-ZK-OuW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frj-4g-dhh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.87735747930787877" blue="0.60600624827745908" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="question.png" id="r6C-O1-UGV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYh-ME-Vsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="1102"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OOO-cD-bMl">
@@ -160,6 +179,7 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="pNu-iC-hFc"/>
                         <segue destination="DnC-Qq-kG3" kind="relationship" relationship="viewControllers" id="n99-Xc-5rW"/>
+                        <segue destination="Qhy-HE-ef2" kind="relationship" relationship="viewControllers" id="PZb-92-H5y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpu-gE-tKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +188,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="question.png" width="32" height="32"/>
         <image name="tips.png" width="32" height="32"/>
         <image name="weight.png" width="25" height="25"/>
     </resources>

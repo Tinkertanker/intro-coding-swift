@@ -218,23 +218,6 @@
             </objects>
             <point key="canvasLocation" x="234" y="416"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cZO-43-b5P">
-            <objects>
-                <viewController id="TBX-xW-Zyz" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wbC-96-v7y"/>
-                        <viewControllerLayoutGuide type="bottom" id="pDd-lZ-psP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UzU-1C-Zon">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aht-aR-Tn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="question.png" width="32" height="32"/>

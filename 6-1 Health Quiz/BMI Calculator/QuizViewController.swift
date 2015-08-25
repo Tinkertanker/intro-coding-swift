@@ -10,10 +10,10 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
-    @IBOutlet weak var questionText: UILabel!
-    @IBOutlet weak var choice1: UIButton!
-    @IBOutlet weak var choice2: UIButton!
-    @IBOutlet weak var choice3: UIButton!
+    @IBOutlet weak var questionText: SpringLabel!
+    @IBOutlet weak var choice1: SpringButton!
+    @IBOutlet weak var choice2: SpringButton!
+    @IBOutlet weak var choice3: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

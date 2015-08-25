@@ -172,6 +172,9 @@
                                     <color key="titleColor" red="1" green="0.4410308631" blue="0.015883939270000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choice1Pressed:" destination="Qhy-HE-ef2" eventType="touchUpInside" id="2LL-iJ-9aE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-hj-zIr">
                                 <rect key="frame" x="16" y="252" width="288" height="50"/>
@@ -180,6 +183,9 @@
                                     <color key="titleColor" red="1" green="0.4410308631" blue="0.015883939270000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choice2Pressed:" destination="Qhy-HE-ef2" eventType="touchUpInside" id="9l7-iH-peo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2c-02-oK8">
                                 <rect key="frame" x="16" y="310" width="288" height="50"/>
@@ -188,11 +194,20 @@
                                     <color key="titleColor" red="1" green="0.4410308631" blue="0.015883939270000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choice3Pressed:" destination="Qhy-HE-ef2" eventType="touchUpInside" id="qr9-c8-XYy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.87735747930787877" blue="0.60600624827745908" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Quiz" image="question.png" id="r6C-O1-UGV"/>
+                    <connections>
+                        <outlet property="choice1" destination="yk1-2r-ylR" id="7f0-Rr-ycb"/>
+                        <outlet property="choice2" destination="WU1-hj-zIr" id="zBt-xS-eJk"/>
+                        <outlet property="choice3" destination="X2c-02-oK8" id="GGe-nb-f5S"/>
+                        <outlet property="questionText" destination="lRk-8V-vaB" id="t0b-ux-p1z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYh-ME-Vsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

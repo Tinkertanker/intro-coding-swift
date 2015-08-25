@@ -10,26 +10,25 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
+    @IBOutlet weak var questionText: UILabel!
+    @IBOutlet weak var choice1: UIButton!
+    @IBOutlet weak var choice2: UIButton!
+    @IBOutlet weak var choice3: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func choice1Pressed(sender: AnyObject) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func choice2Pressed(sender: AnyObject) {
     }
-    */
+    
+    @IBAction func choice3Pressed(sender: AnyObject) {
+    }
+    
 
 }

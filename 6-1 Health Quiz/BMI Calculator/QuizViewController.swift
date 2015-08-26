@@ -17,17 +17,22 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func choice1Pressed(sender: AnyObject) {
+        choice1.animation = "pop"
+        choice1.animate()
     }
     
     @IBAction func choice2Pressed(sender: AnyObject) {
+        choice2.animation = "shake"
+        choice2.animate()
+        
     }
     
     @IBAction func choice3Pressed(sender: AnyObject) {
+        choice3.animation = "shake"
+        choice3.animate()
     }
     
 

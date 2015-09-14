@@ -16,10 +16,17 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var choice3: SpringButton!
     
     var question = String()
+    var option1 = String()
+    var option2 = String()
+    var option3 = String()
+    var answer = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         questionText.text = question
+        choice1.setTitle(option1, forState: UIControlState.Normal)
+        choice2.setTitle(option2, forState: UIControlState.Normal)
+        choice3.setTitle(option3, forState: UIControlState.Normal)
     }
     
     @IBAction func choice1Pressed(sender: AnyObject) {

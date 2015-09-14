@@ -51,6 +51,10 @@ class QuizTableViewController: UITableViewController {
             let item : Dictionary = data!.objectAtIndex(row!) as! Dictionary<String, String>
             var question = item["question"]
             destination!.question = question!
+            destination!.option1 = item["option1"]!
+            destination!.option2 = item["option2"]!
+            destination!.option3 = item["option3"]!
+            destination!.answer = item["answer"]!
         }
     }
     

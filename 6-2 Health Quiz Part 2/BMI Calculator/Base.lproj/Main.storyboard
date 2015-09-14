@@ -269,9 +269,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYh-ME-Vsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="1167"/>
+            <point key="canvasLocation" x="1443" y="1167"/>
         </scene>
-        <!--Quiz-->
+        <!--Quiz Table View Controller-->
         <scene sceneID="3W2-S1-lm5">
             <objects>
                 <tableViewController id="Olc-4g-5Xy" customClass="QuizTableViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -298,7 +298,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="Qhy-HE-ef2" kind="modal" identifier="segue" id="vJ6-gC-w3L"/>
+                                    <segue destination="Qhy-HE-ef2" kind="push" identifier="segue" id="vJ6-gC-w3L"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -307,11 +307,11 @@
                             <outlet property="delegate" destination="Olc-4g-5Xy" id="sp7-N7-fFu"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Quiz" image="question.png" id="2UL-gV-6nE"/>
+                    <navigationItem key="navigationItem" id="Owk-Zm-RAa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TI-x1-nbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="627" y="1167"/>
+            <point key="canvasLocation" x="1031" y="1167"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OOO-cD-bMl">
@@ -327,12 +327,32 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="pNu-iC-hFc"/>
                         <segue destination="DnC-Qq-kG3" kind="relationship" relationship="viewControllers" id="n99-Xc-5rW"/>
-                        <segue destination="Olc-4g-5Xy" kind="relationship" relationship="viewControllers" id="V7r-VP-LgI"/>
+                        <segue destination="6P7-c9-zlv" kind="relationship" relationship="viewControllers" id="V7r-VP-LgI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpu-gE-tKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234" y="416"/>
+        </scene>
+        <!--Quiz-->
+        <scene sceneID="Gub-Jc-D76">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6P7-c9-zlv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Quiz" image="question.png" id="2UL-gV-6nE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RBD-mz-iqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Olc-4g-5Xy" kind="relationship" relationship="rootViewController" id="NBc-FU-FrJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leI-ke-yIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="1167"/>
         </scene>
     </scenes>
     <resources>

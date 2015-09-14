@@ -16,6 +16,7 @@ class QuizTableViewController: UITableViewController {
         super.viewDidLoad()
         let dataPath = NSBundle.mainBundle().pathForResource("Quiz", ofType: "plist")
         data = NSArray(contentsOfFile: dataPath!)
+        title = "Healthy Quiz"
     }
 
     override func didReceiveMemoryWarning() {

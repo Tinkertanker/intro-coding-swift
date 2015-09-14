@@ -15,8 +15,11 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var choice2: SpringButton!
     @IBOutlet weak var choice3: SpringButton!
     
+    var question = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionText.text = question
     }
     
     @IBAction func choice1Pressed(sender: AnyObject) {

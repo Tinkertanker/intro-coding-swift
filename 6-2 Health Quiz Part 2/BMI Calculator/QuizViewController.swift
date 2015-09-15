@@ -30,19 +30,30 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func choice1Pressed(sender: AnyObject) {
-        choice1.animation = "pop"
+        if (answer == "1") {
+            choice1.animation = "pop" // correct animation
+        } else {
+            choice1.animation = "shake" // wrong animation
+        }
         choice1.animate()
     }
     
     @IBAction func choice2Pressed(sender: AnyObject) {
-        choice2.animation = "shake"
-        choice2.animate()
-        
+        if (answer == "2") {
+            choice1.animation = "pop" // correct animation
+        } else {
+            choice1.animation = "shake" // wrong animation
+        }
+        choice1.animate()
     }
     
     @IBAction func choice3Pressed(sender: AnyObject) {
-        choice3.animation = "shake"
-        choice3.animate()
+        if (answer == "3") {
+            choice1.animation = "pop" // correct animation
+        } else {
+            choice1.animation = "shake" // wrong animation
+        }
+        choice1.animate()
     }
     
 

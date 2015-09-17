@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1EDFDA1BAA823200DEEB47 /* ClinicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1EDFD91BAA823200DEEB47 /* ClinicTableViewController.swift */; };
+		AF1EDFDC1BAA84A900DEEB47 /* stethoscope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1EDFDB1BAA84A900DEEB47 /* stethoscope@2x.png */; };
+		AF1EDFDE1BAA897D00DEEB47 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1EDFDD1BAA897D00DEEB47 /* MapViewController.swift */; };
 		AF5E44E81BA72776000126C0 /* QuizTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E44E71BA72776000126C0 /* QuizTableViewController.swift */; };
 		AF5E44EB1BA727A5000126C0 /* Quiz.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF5E44E91BA727A5000126C0 /* Quiz.plist */; };
 		AF617B8B1B8C93D70091A5F1 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF617B6D1B8C93D70091A5F1 /* AsyncButton.swift */; };
@@ -65,6 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF1EDFD91BAA823200DEEB47 /* ClinicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicTableViewController.swift; sourceTree = "<group>"; };
+		AF1EDFDB1BAA84A900DEEB47 /* stethoscope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stethoscope@2x.png"; sourceTree = "<group>"; };
+		AF1EDFDD1BAA897D00DEEB47 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AF5E44E71BA72776000126C0 /* QuizTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTableViewController.swift; sourceTree = "<group>"; };
 		AF5E44EA1BA727A5000126C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Quiz.plist; sourceTree = "<group>"; };
 		AF617B6D1B8C93D70091A5F1 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
@@ -193,6 +199,8 @@
 		AF6AE8AB1B69313200329A20 /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				AF1EDFDD1BAA897D00DEEB47 /* MapViewController.swift */,
+				AF1EDFD91BAA823200DEEB47 /* ClinicTableViewController.swift */,
 				AF617B6C1B8C93D70091A5F1 /* Spring */,
 				AF6AE8AE1B69313200329A20 /* AppDelegate.swift */,
 				AF5E44E71BA72776000126C0 /* QuizTableViewController.swift */,
@@ -202,6 +210,7 @@
 				AF9B1C2B1B6E887800C9E991 /* tips@2x.png */,
 				AF6AE8B21B69313200329A20 /* Main.storyboard */,
 				AFCAE6A51B7C55E800C780FA /* question@2x.png */,
+				AF1EDFDB1BAA84A900DEEB47 /* stethoscope@2x.png */,
 				AF7DE7FD1B706491008FB548 /* teeth.jpg */,
 				AFCAE6A31B7C49D300C780FA /* liftweights.jpg */,
 				AF9B1C2F1B6E8B2500C9E991 /* TipsViewController.swift */,
@@ -328,6 +337,7 @@
 				AFCAE6A41B7C49D300C780FA /* liftweights.jpg in Resources */,
 				AF7DE7FC1B6F37BD008FB548 /* coffee.jpg in Resources */,
 				AF6AE8B61B69313200329A20 /* Images.xcassets in Resources */,
+				AF1EDFDC1BAA84A900DEEB47 /* stethoscope@2x.png in Resources */,
 				AF617B971B8C93D70091A5F1 /* Info.plist in Resources */,
 				AF617B9A1B8C93D70091A5F1 /* LoadingView.xib in Resources */,
 				AF9B1C2C1B6E887800C9E991 /* tips@2x.png in Resources */,
@@ -371,6 +381,7 @@
 				AFCAE6A81B7C567E00C780FA /* QuizViewController.swift in Sources */,
 				AF617B8C1B8C93D70091A5F1 /* AsyncImageView.swift in Sources */,
 				AF617B8F1B8C93D70091A5F1 /* DesignableButton.swift in Sources */,
+				AF1EDFDA1BAA823200DEEB47 /* ClinicTableViewController.swift in Sources */,
 				AF617BA61B8C93D70091A5F1 /* TransitionZoom.swift in Sources */,
 				AF617BA01B8C93D70091A5F1 /* SpringImageView.swift in Sources */,
 				AF617B9F1B8C93D70091A5F1 /* SpringButton.swift in Sources */,
@@ -380,6 +391,7 @@
 				AF617B931B8C93D70091A5F1 /* DesignableTextField.swift in Sources */,
 				AF617B991B8C93D70091A5F1 /* LoadingView.swift in Sources */,
 				AF617B9D1B8C93D70091A5F1 /* Spring.swift in Sources */,
+				AF1EDFDE1BAA897D00DEEB47 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

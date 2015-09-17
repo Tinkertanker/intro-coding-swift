@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>Drinking coffee before your nap will help you have... </string>
+		<key>option1</key>
+		<string>A better nap</string>
+		<key>option2</key>
+		<string>Weird dreams</string>
+		<key>option3</key>
+		<string>Better exam results</string>
+		<key>answer</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>How long should you wait after eating to brush your teeth?</string>
+		<key>option1</key>
+		<string>Immediately</string>
+		<key>option2</key>
+		<string>30-60 minutes</string>
+		<key>option3</key>
+		<string>10 days</string>
+		<key>answer</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Muscle takes up less space than fat. Is this true?</string>
+		<key>option1</key>
+		<string>Yes</string>
+		<key>option2</key>
+		<string>No</string>
+		<key>option3</key>
+		<string>What?</string>
+		<key>answer</key>
+		<string>1</string>
+	</dict>
+</array>
+</plist>
